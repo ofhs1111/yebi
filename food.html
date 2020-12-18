@@ -11,9 +11,9 @@
 	.row{ margin:0;padding:0px 50px;position: relative; }
 	.row .col-1{background-color: #00ff01;width:1400px; height:2000px;text-align: center; padding-top: 100px;}
 	.row .col-2{background-color: black;width:600px; height:500px;text-align: center; position: absolute;right: 30%; top: 10%;}
-	.button1{border: none; color:white; display: inline-block; background-color: red;opacity:100;cursor:pointer; padding: 20px 40px;}
-	.button2{border: none; color:white; display: inline-block; background-color: red;opacity:100;cursor:pointer; padding: 20px 40px;}
-	.button3{border: none; color:white; display: inline-block; background-color: red;opacity:100;cursor:pointer; padding: 20px 40px;}
+	.button1{border: none; color:white; display: inline-block; background-color: red;opacity:0;cursor:pointer; padding: 20px 40px;}
+	.button2{border: none; color:white; display: inline-block; background-color: red;opacity:0;cursor:pointer; padding: 20px 40px;}
+	.button3{border: none; color:white; display: inline-block; background-color: red;opacity:0;cursor:pointer; padding: 20px 40px;}
 }
 </style>
 </head>
@@ -41,13 +41,19 @@
 
 			<img src="arcade_hole.png" width="1200px" style="position: absolute; right: 1%;">
 
-			<button class="button button1" style="position: absolute; top:39%;right:44.5%;" onclick=""></button>
-				<button class="button button2" style="position: absolute; top:39%;right:36.5%;"onclick=""></button>
-				<button class="button button3"style="position: absolute; top:39%;right:28%;"onclick=""></button>
+			<button class="button button1" style="position: absolute; top:39%;right:44.5%;" onclick="" id="but1"></button>
+				<button class="button button2" style="position: absolute; top:39%;right:36.5%;"onclick="" id="but2"></button>
+				<button class="button button3"style="position: absolute; top:39%;right:28%;"onclick="" id="but3"></button>
 			<script>
-		button1.onclick = function(video1){if(video1.target.paused){video1.target.play();}else{video1.target.pause();}}
-		button2.onclick = function(video2){if(video2.target.paused){video2.target.play();}else{video2.target.pause();}}
-		button3.onclick = function(video3){if(video3.target.paused){video3.target.play();}else{video3.target.pause();}}
+		but1.onclick = function()
+		{if(video1.paused){
+			video1.play();video4.play();}else{video1.pause();video4.pause();}}
+		but2.onclick = function()
+		{if(video2.paused){
+			video2.play();video5.play();}else{video2.pause();video5.pause();}}
+		but3.onclick = function()
+		{if(video3.paused){
+			video3.play();video6.play();}else{video3.pause();video6.pause();}}
 	</script>
 
 			
