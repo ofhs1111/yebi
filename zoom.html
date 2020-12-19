@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<script type="text/javascript" src="wow.min.js"></script>
+	<title>줌 배경화면 랜덤 뽑기</title>
+	<style type="text/css">
+	body, ul, li{ margin:0; padding:; background-color: black;}
+	.row{margin:0;padding:0px 50px;position: relative; }
+	.row .col-1{background: #00ff01; width:1400px;height: 2000px;text-align: center; padding-top: 100px;}}
+	.back{width: 500px; height: 500px; background-image: : url("back.png")}
+	.button{ background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+opacity: 0%;}
+	
+}
+</style>
+</head>
+<body>
+
+	<div class="row">
+			<div class="back">
+			
+		</div>
+
+		<div class="col-1">
+		
+			<video src="zoombackground1.mp4" autoplay loop muted id="video1"width="45%"
+		style="position: absolute; left:28.5%; top: 15%;"/></video>
+
+        
+			<img src="arcade_hole.png" width="1200px" style="position: absolute; right: 1%;">
+			<img src="flicker.gif" autoplay loop muted width="105" style="position: absolute; top: 34.2%;left: 26.6%">
+			<button class="button" style="position: absolute; left: 27%; top: 35%; text-decoration: none;opacity: 0%;cursor: pointer; " onclick="" id="but1">clickclickclick<br>clickclickclick<br>clickclickclick<br>clickclickclick</button>
+		</div>
+	</div>
+
+			
+				
+	<script>
+		but1.onclick = function()
+		{if(video1.paused){
+			video1.play();}else{video1.pause();}}
+		
+		
+	</script>
+
+			
+		</div>
+	
+
+</body>
+</html>
